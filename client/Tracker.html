@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vaccine Tracker DApp</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body class="container">
+    <h1>Track a vaccine</h1>
+    <hr />
+
+    <label for="entityName">Entity Name:</label>
+    <input type="text" id="entityName" />
+    <label for="entityType">Entity Type:</label>
+    <!-- <input type="text" id="entityType" /> -->
+    <select id="entityType">
+      <option value="0">Suppliers</option>
+      <option value="1">Manufacturers</option>
+      <option value="2">Logistics</option>
+      <option value="3">Distributors</option>
+      <option value="4">Hospitals</option>
+    </select>
+    <button id="button1">Entity Register</button>
+    <hr />
+
+    <label for="entityDetailsCheck">Entity Name:</label>
+    <input type="text" id="entityDetailsCheck" />
+    <button id="button2">Entity Details Check</button>
+    <hr />
+
+    <label for="vaccineName">Vaccine Name:</label>
+    <input type="text" id="vaccineName" />
+    <label for="mrp">MRP:</label>
+    <input type="number" id="mrp" />
+    <button id="button3">Vaccine Register</button>
+    <hr />
+
+    <label for="vaccineId">Vaccine ID:</label>
+    <input type="number" id="vaccineId" />
+    <label for="vaccineStatus">Vaccine Status:</label>
+    <select id="vaccineStatus">
+      <option value="0">PACKAGED</option>
+      <option value="1">APPROVED</option>
+      <option value="2">DISPATCHED</option>
+      <option value="3">INTRANSIT</option>
+      <option value="4">UNFIT</option>
+      <option value="5">FITFORUSE</option>
+    </select>
+    <button id="button6">Vaccine Administer</button>
+    <hr />
+
+    <label for="lat">Latitude:</label>
+    <input type="number" id="lat" />
+    <label for="long">Longitude:</label>
+    <input type="number" id="long" />
+    <label for="vaccineID">Vaccine ID:</label>
+    <input type="number" id="vaccineID" />
+    <button id="button4">Vaccine Location</button>
+    <hr />
+
+    <label for="idVaccine">Vaccine ID:</label>
+    <input type="number" id="idVaccine" />
+    <button id="button5">Vaccine Status</button>
+  </body>
+  <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"
+    integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./Tracker.js"></script>
+</html>
